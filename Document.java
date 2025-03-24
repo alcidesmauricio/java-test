@@ -1,7 +1,5 @@
-package pacote.onde.esta; 
-
 public class Documento {
-    private long cnpj;
+    private String cnpj;
 
     private String numerodocumento;
 
@@ -10,7 +8,7 @@ public class Documento {
     }
 
     // Construtor com parâmetro
-    public Documento(long cnpj) {
+    public Documento(String cnpj) {
         this.cnpj = cnpj;
     }
 
@@ -18,23 +16,22 @@ public class Documento {
         this.numerodocumento = numerodocumento;
     }
 
-
     // Getter para cnpj
-    public long getCnpj() {
+    public String getCnpj() {
         return cnpj;
     }
 
     // Setter para cnpj
-    public void setCnpj(long cnpj) {
+    public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
 
-    // Getter para cnpj
+    // Getter para numerodocumento
     public String getnumerodocumento() {
         return numerodocumento;
     }
 
-    // Setter para cnpj
+    // Setter para numerodocumento
     public void setnumerodocumento(String numerodocumento) {
         this.numerodocumento = numerodocumento;
     }
@@ -43,7 +40,7 @@ public class Documento {
     @Override
     public String toString() {
         return "Documento{" +
-                "cnpj=" + cnpj +
+                "cnpj='" + cnpj + '\'' +
                 '}';
     }
 }
